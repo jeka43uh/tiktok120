@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <!-- Meta-редирект для быстрого перенаправления -->
+    <meta http-equiv="refresh" content="0; url=https://www1.affhone.fyi/click?pid=17228&offer_id=712">
+    <style>
+        body {
+            background-color: #5e2ca5;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+        }
+        .container {
+            background: #4a1e8f;
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        button {
+            background-color: #9b59b6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #8e44ad;
+        }
+    </style>
+    <script>
+        function redirectToReferral() {
+            const referralLink = "https://www1.affhone.fyi/click?pid=17228&offer_id=712";
+
+            // Пробуем использовать intent:// для Android
+            if (/android/i.test(navigator.userAgent)) {
+                window.location.href = "intent://www1.affhone.fyi/click?pid=17228&offer_id=712#Intent;scheme=https;package=com.android.chrome;end;";
+            } else {
+                // Обычный редирект для других устройств
+                window.location.href = referralLink;
+            }
+        }
+
+        window.onload = redirectToReferral;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>2</h1>
+        <p>Loading...</p>
+        <button onclick="redirectToReferral()">Open Link</button>
+        <button onclick="navigator.clipboard.writeText('https://www1.affhone.fyi/click?pid=17228&offer_id=712')">Copy Link</button>
+    </div>
+</body>
+</html>
